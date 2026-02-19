@@ -9,9 +9,7 @@ conta_caracteres_com_espacos= len(nome)
 conta_caracteres_sem_espacos = len(nome.replace(' ', ''))
 
 lista = nome.split()
-
 nome_novo = ' '.join(lista[:-1]) + ' do Inatel'
-print('Versão Inatel: {}'.format(nome_novo))
 
 print('Maiúsculo: {}'.format(maiusculo))
 print('Minúsculo: {}'.format(minusculo))
