@@ -72,7 +72,15 @@ print(f"Pessoa mais leve: {leve['nome']} com {leve['peso']} kg")
 
 #Exercicio5
 pessoas = []
-n = int(input("Quantas pessoas deseja cadastrar? "))
+while True:
+    try:
+        n = int(input("Quantas pessoas deseja cadastrar? "))
+        if n > 0:
+            break
+        else:
+            print("Erro: O número de pessoas deve ser pelo menos 1.")
+    except ValueError:
+        print("Entrada inválida! Por favor, digite um número inteiro.")
 
 for i in range(n):
     nome = input("Nome: ")
